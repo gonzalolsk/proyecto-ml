@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js",
-    "start": "nodemon app.js -e css,html,js"
-  },
+    "test": "clear && nodemon app.js -e html,css,js,mjs,json",
+    "start": " && node app.js"
+  },   
   "author": "",
   "license": "ISC",
   "dependencies": {
