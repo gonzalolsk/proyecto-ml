@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
+</head>
+<body>
+
+    <header class="main-header">
+        <!-- top bar --> 
+        <div class="main-header-top-bar">
+            
+             <img src='/img/logo-mercado-liebre.svg' class="logo"> 
+        
+        <!--barra de búsqueda -->
+        <form  class="barra-de-busqueda-form" action="" method="post" target="_blank">
+            <fieldset class="barra-de-busqueda-fieldset"> 
+                <input type="search" id="search" placeholder="Buscar productos, marcas">
+                <span class="icono-busqueda"><i class="fa fa-search"></i></span>
+            </fieldset>
+    </form> 
+    
+    <div class="div-copy-header">
+        <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i> 
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+</div>
+        
+        
+        <!-- boton hamburguesa -->
+        <a href="#" class="boton-hamburguesa"><i class="fas fa-bars"></i></a>
+        
+         <!-- barras de navegacion -->
+         <nav class="main-navbar">
+        
+            <ul class="left-navbar">
+                <li><a href='#'>Ofertas</a></li>
+                <li><a href='#'>Tiendas Oficiales<a></li>
+                <li><a href='#'>Vender</a></li>
+                <li><a href='#'>Ayuda</a></li>
+            </ul>
+        
+            <ul class="right-navbar">
+                <li><a href='/register'>Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href='/login'>Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href='#'>Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+             </ul>
+        </nav>
+        
+        </header>
+        
+
+        <!-- =========================MAIN================================================== -->
+    <main>
+    <h1>¡REGISTRATE!</h1>
+    <form action="#" method="POST">
+        <fieldset class="registrate-fieldset">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+        <input type="text" name="usuario" id="usuario" required placeholder="Usuario">
+
+        <label for="fnac">FECHA DE NACIMIENTO</label>
+        <input type="date" name="fnac" id="fnac" required>
+        <label for="fnac">DOMICILIO</label>
+        <input type="text" name="domicilio" id="domicilio" required placeholder="Calle... nro...">
+
+        <div class="perfil-de-usuario">
+        <label for="perfil de usuario">PERFIL DE USUARIO</label>
+        <select class="selector" name="perfil de usuario" id="perfil de usuario">
+            <option value="comprar">Comprar</option>
+            <option value="vender">Vender</option>
+        </div>
+        </select>
+       
+        <label class="label-categorias-de-interes" for="categorias de interes">CATEGORIAS DE INTERES</label>
+        <div class="categorias-de-interes">
+       
+        <label><input type="checkbox" name="categorias de interes" id="categorias de interes" value="Eletro">Electro</label>
+        <label><input type="checkbox" name="categorias de interes" id="categorias de interes" value="Moda">Moda</label>
+        <label><input type="checkbox" name="categorias de interes" id="categorias de interes" value="Hogar">Hogar</label>
+        <label><input type="checkbox" name="categorias de interes" id="categorias de interes" value="Jugueteria">Jugueteria</label>
+        <label><input type="checkbox" name="categorias de interes" id="categorias de interes" value="Vida Sana">Vida Sana</label>
+        </div>
+    <div class="foto-de-perfil-div">
+        <label for="foto de perfil">Foto de Perfil</label>
+        <input type="file" name="foto de perfil" id="foto de perfil">
+    </div>
+        <input type="password" name="contraseña" id="contraseña" required placeholder="Contraseña" minlength="6">
+ 
+        <input type="password" name="confirmar contraseña" id="confirmar contraseña" required placeholder="Confirmar Contraseña">
+
+        <button type="submit" id="submit-button">ENVIAR</button>
+        <button type="reset" id="reset-button">BORRAR FORMULARIO</button>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
